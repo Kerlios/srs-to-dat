@@ -1,6 +1,8 @@
 Latest release:
 [antizapret.dat](https://github.com/Kerlios/srs-to-dat/releases/latest/download/antizapret.dat)
 
+Credits to: [savely-krasovsky](https://github.com/savely-krasovsky/antizapret-sing-box) and [Loyalsoldier](https://github.com/Loyalsoldier/geoip)
+
 # 简介
 
 本项目每周四自动生成多种格式 GeoIP 文件，同时提供命令行界面（CLI）工具供用户自行定制 GeoIP 文件，包括但不限于 V2Ray `dat` 格式文件 `geoip.dat`、MaxMind `mmdb` 格式文件 `Country.mmdb`、sing-box `SRS` 格式文件、mihomo `MRS` 格式文件、Clash ruleset 和 Surge ruleset。
