@@ -4,7 +4,7 @@
       "type": "singboxSRS",
       "action": "add",
       "args": {
-        "sing-box-srs": "./output/antizapret.srs"
+        "sing-box-srs": "./output/antizapret.srs",
       }
     }
   ],
