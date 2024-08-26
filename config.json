@@ -5,7 +5,7 @@
             "action": "add",
             "args": {
                 "name":"antizapret",
-                "uri":"./antizapret.srs"
+                "uri":"./output/antizapret.srs"
             }
         }
     ],
@@ -15,7 +15,7 @@
             "action": "output",
             "args": {
                 "outputDir": "./output",
-                "outputName": "geoip.dat",
+                "outputName": "antizapret.dat",
                 "oneFilePerList": true
             }
         }
