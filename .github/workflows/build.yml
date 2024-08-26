@@ -31,6 +31,13 @@ jobs:
           echo "RELEASE_NAME=$(date +%Y%m%d%H%M)" >> $GITHUB_ENV
         shell: bash
 
+      - name: Download antizapret databases
+        env:
+          LICENSE_KEY: ${{ secrets.MAXMIND_GEOLITE2_LICENSE }}
+        run: |
+          mkdir -p output
+          curl -L "https://github.com/savely-krasovsky/antizapret-sing-box/releases/latest/download/antizapret.srs" -o ./output/antizapret.srs
+
       - name: Build geoip files
         run: |
           go build ./
@@ -58,8 +65,7 @@ jobs:
 
       - name: Remove some files to avoid publishing to GitHub release
         run: |
-          rm -rf ./output/*.{gz,zip}
-          rm -rf ./output/{clash,dat,mrs,nginx,srs,surge,text}
+          rm -rf ./output/{clash,mrs,nginx,srs,surge,text}
 
       - name: Upload files to GitHub release
         uses: svenstaro/upload-release-action@v2
