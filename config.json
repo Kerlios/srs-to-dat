@@ -4,7 +4,7 @@
       "type": "singboxSRS",
       "action": "add",
       "args": {
-        "sing-box-srs": "./geolite2/GeoLite2-Country-Locations-en.csv"
+        "sing-box-srs": "./output/antizapret.srs"
       }
     }
   ],
@@ -14,7 +14,8 @@
       "action": "output",
       "args": {
         "outputDir": "./output",
-        "outputName": "geoip.dat"
+        "outputName": "geoip.dat",
+        "oneFilePerList": true,
       }
     }
   ]
