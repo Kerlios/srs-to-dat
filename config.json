@@ -2,7 +2,10 @@
   "input": [
     {
       "type": "singboxSRS",
-      "action": "add"
+      "action": "add",
+      "args": {
+        "sing-box-srs": "./geolite2/GeoLite2-Country-Locations-en.csv"
+      }
     }
   ],
   "output": [
