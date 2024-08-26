@@ -1,22 +1,22 @@
 {
-  "input": [
-    {
-      "type": "singboxSRS",
-      "action": "add",
-      "args": {
-        "sing-box-srs": "./output/antizapret.srs",
-      }
-    }
-  ],
-  "output": [
-    {
-      "type": "v2rayGeoIPDat",
-      "action": "output",
-      "args": {
-        "outputDir": "./output",
-        "outputName": "geoip.dat",
-        "oneFilePerList": true,
-      }
-    }
-  ]
+    "input": [
+        {
+            "type": "singboxSRS",
+            "action": "add",
+            "args": {
+                "sing-box-srs": "./output/antizapret.srs"
+            }
+        }
+    ],
+    "output": [
+        {
+            "type": "v2rayGeoIPDat",
+            "action": "output",
+            "args": {
+                "outputDir": "./output",
+                "outputName": "geoip.dat",
+                "oneFilePerList": true
+            }
+        }
+    ]
 }
